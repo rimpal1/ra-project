@@ -1,0 +1,71 @@
+{
+  "name": "ra-project",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.4.1",
+    "@emotion/styled": "^11.3.0",
+    "@mui/icons-material": "^5.0.1",
+    "@mui/material": "^5.0.1",
+    "@mui/styles": "^5.0.1",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "axios": "^0.21.4",
+    "bcrypt": "^5.0.1",
+    "concurrently": "^6.2.1",
+    "date-fns": "^2.24.0",
+    "express": "^4.17.1",
+    "express-jwt": "^6.1.0",
+    "formik": "^2.2.9",
+    "history": "^5.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "mysql2": "^2.3.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^6.0.0-beta.5",
+    "react-scripts": "4.0.3",
+    "sequelize": "^6.6.5",
+    "sequelize-cli": "^6.2.0",
+    "web-vitals": "^1.1.2",
+    "yup": "^0.32.9"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "server": "export NODE_ENV=local && export PORT=5005 && nodemon server.js",
+    "start-dev": "concurrently \"npm run server\" \"npm start\""
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.13"
+  },
+  "nodemonConfig": {
+    "watch": [
+      "routes/*",
+      "server.js",
+      "models/*"
+    ],
+    "delay": "2000ms"
+  },
+  "proxy": "http://localhost:5005"
+}

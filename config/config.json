@@ -1,0 +1,12 @@
+{
+   "local": {
+      "username": "root",
+      "password": "12345678",
+      "database": "job_portal",
+      "host": "127.0.0.1",
+      "dialect": "mysql",
+      "dialectOptions": {
+         "multipleStatements": true
+      }
+   }
+}
