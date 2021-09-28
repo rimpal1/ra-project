@@ -71,6 +71,7 @@ const RegisterView = () => {
                            fullWidth
                            helperText={touched.firstName && errors.firstName}
                            label="First name"
+                           autoComplete="off"
                            margin="normal"
                            name="firstName"
                            onBlur={handleBlur}
@@ -83,6 +84,7 @@ const RegisterView = () => {
                            fullWidth
                            helperText={touched.lastName && errors.lastName}
                            label="Last name"
+                           autoComplete="off"
                            margin="normal"
                            name="lastName"
                            onBlur={handleBlur}
@@ -95,6 +97,7 @@ const RegisterView = () => {
                            fullWidth
                            helperText={touched.email && errors.email}
                            label="Email Address"
+                           autoComplete="off"
                            margin="normal"
                            name="email"
                            onBlur={handleBlur}
@@ -107,6 +110,7 @@ const RegisterView = () => {
                            error={Boolean(touched.password && errors.password)}
                            fullWidth
                            helperText={touched.password && errors.password}
+                           autoComplete="off"
                            label="Password"
                            margin="normal"
                            name="password"
@@ -117,7 +121,14 @@ const RegisterView = () => {
                            variant="outlined"
                         />
                         <Box my={2}>
-                           <Button color="primary" disabled={isSubmitting} fullWidth size="large" type="submit" variant="contained">
+                           <Button
+                              color="primary"
+                              disabled={isSubmitting}
+                              fullWidth
+                              size="large"
+                              type="submit"
+                              variant="contained"
+                           >
                               Sign up now
                            </Button>
                         </Box>

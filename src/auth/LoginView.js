@@ -72,6 +72,7 @@ const LoginView = () => {
                         <TextField
                            error={Boolean(touched.email && errors.email)}
                            fullWidth
+                           autoComplete="off"
                            helperText={touched.email && errors.email}
                            label="Email Address"
                            margin="normal"
@@ -88,6 +89,7 @@ const LoginView = () => {
                            helperText={touched.password && errors.password}
                            label="Password"
                            margin="normal"
+                           autoComplete="off"
                            name="password"
                            onBlur={handleBlur}
                            onChange={handleChange}
@@ -96,7 +98,14 @@ const LoginView = () => {
                            variant="outlined"
                         />
                         <Box my={2}>
-                           <Button color="primary" disabled={isSubmitting} fullWidth size="large" type="submit" variant="contained">
+                           <Button
+                              color="primary"
+                              disabled={isSubmitting}
+                              fullWidth
+                              size="large"
+                              type="submit"
+                              variant="contained"
+                           >
                               Sign in now
                            </Button>
                         </Box>
