@@ -18,3 +18,11 @@
 6. Provided data is stored in 'job_interview_assignment' table, and fetched after the user clicks the button.
 7. The chart of given table is displayed once the button is clicked
 8. User can logout of the account
+
+![Registration Page](../nfc/screenshots/Screen%20Shot%202021-09-28%20at%203.44.27%20PM.png)
+
+![Login Page](../nfc/screenshots/Screen%20Shot%202021-09-28%20at%203.45.59%20PM.png)
+
+![Dashboard Page](../nfc/screenshots/Screen%20Shot%202021-09-28%20at%203.46.10%20PM.png)
+
+![Chart displayed after button clicked](../nfc/screenshots/Screen%20Shot%202021-09-28%20at%203.46.19%20PM.png)
