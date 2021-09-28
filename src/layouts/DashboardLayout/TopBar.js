@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { Link as RouterLink, useNavigate } from "react-router-dom";
-import { AppBar, Box, IconButton, Toolbar, Typography, Tooltip } from "@mui/material";
+import { AppBar, Box, IconButton, Toolbar, Tooltip } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import { DoubleArrow as DoubleArrowIcon, Input as InputIcon } from "@mui/icons-material";
 import { AppContext } from "../../state/appStateManagement";
@@ -48,6 +48,7 @@ const TopBar = () => {
             <Box flexGrow={1} />
             <Tooltip title="Logout" arrow>
                <IconButton color="inherit" onClick={logout}>
+                  {" "}
                   <InputIcon />
                </IconButton>
             </Tooltip>

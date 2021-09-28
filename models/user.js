@@ -4,6 +4,7 @@ module.exports = (sequelize, DataTypes) => {
          type: DataTypes.STRING,
          allowNull: false,
          unique: true,
+         primaryKey: true,
          validate: {
             notEmpty: true
          }
@@ -24,6 +25,15 @@ module.exports = (sequelize, DataTypes) => {
          allowNull: true
       }
    });
+
+   user.associate = (models) => {
+      user.hasMany(models.user_audit, {
+         foreignKey: {
+            name: "email",
+            allowNull: false
+         }
+      });
+   };
 
    return user;
 };
